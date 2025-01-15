@@ -35,36 +35,28 @@
         <section>
             <h2>What's Inside</h2>
             <dl>
-                <dt><h3>Zoom & Rotate</h3></dt>
-                <dd><p>Explore every detail effortlessly. Zoom in and rotate your 3D model to view it from every angle.</p>
-                </dd>
-                <dt><h3>High Performance</h3></dt>
-                <dd><p>Our platform ensures smooth navigation and rendering, 
+                <h3>Zoom & Rotate</h3>
+                <p>Explore every detail effortlessly. Zoom in and rotate your 3D model to view it from every angle.</p>
+                <h3>High Performance</h3>
+                <p>Our platform ensures smooth navigation and rendering, 
                     providing an immersive experience without lag or delays.</p>
-                </dd>
-                <dt><h3>Realtime Manipulation</h3></dt>
-                <dd><p>Customize your scene on the fly. Change colors, add text, 
+                <h3>Realtime Manipulation</h3>
+                <p>Customize your scene on the fly. Change colors, add text, 
                     and integrate graphics in real-time to adapt to evolving needs and preferences.</p>
-                </dd>
-                <dt><h3>Environment Lighting</h3></dt>
-                <dd><p>Set the perfect mood for your scene with 12 preset lighting options and fine-tune the lighting to perfection. 
+                <h3>Environment Lighting</h3>
+                <p>Set the perfect mood for your scene with 12 preset lighting options and fine-tune the lighting to perfection. 
                     Adjust exposure, direction, 
                     and intensity to create the desired atmosphere for your 3D model.</p>
-                </dd>
-                <dt><h3>Auto-Rotation</h3></dt>
-                <dd><p>Engage viewers with automatic spinning. Showcase your model dynamically without manual intervention.</p>
-                </dd>
-                <dt><h3>Fully Customisable</h3></dt>
-                <dd><p>Tailor every aspect of your 3D experience. Customize the background color, size, 
+                <h3>Auto-Rotation</h3>
+                <p>Engage viewers with automatic spinning. Showcase your model dynamically without manual intervention.</p>
+                <h3>Fully Customisable</h3>
+                <p>Tailor every aspect of your 3D experience. Customize the background color, size, 
                     and loading screen to match your brand identity.</p>
-                </dd>
-                <dt><h3>Controlled Viewing Experience</h3></dt>
-                <dd><p>Direct attention where it matters most. 
+                <h3>Controlled Viewing Experience</h3>
+                <p>Direct attention where it matters most. 
                     Set rotation limits and starting camera positions to guide viewers' focus and highlight key elements from the outset.</p>
-                </dd>
-                <dt><h3>Transition everything</h3></dt>
-                <dd><p>Elevate your presentation with seamless transitions. Control camera movement, zoom levels, lighting exposure, and direction changes to guide viewers through your 3D environment.</p>
-                </dd>
+                <h3>Transition everything</h3>
+                <p>Elevate your presentation with seamless transitions. Control camera movement, zoom levels, lighting exposure, and direction changes to guide viewers through your 3D environment.</p> 
             </dl>
             <button>Show more</button>
         </section>
@@ -118,72 +110,383 @@
                 <script src="https://api.270degrees.nl/api/script/latest/viewer.js"></script>
             </code>
         </section>
-        <section>
-            <dl>
-                <dt>
-                    <a>Configure</a>
-                </dt>
-                <dd>
-                    <span>Main Color:</span>
-                    <button>White</button>
-                    <button>Grey</button>
-                    <button>Blue</button>
-                    <button>Red</button>
-                    <br>
-                    <span>Toggle crest:</span>
-                    <select name="" id=""><option value="show">Show</option>
-                        <option value="hide">hide</option>
-                    </select><br>
-                    
-                    <span>Main Color:</span>
-                    <select name="" id=""></select>
-                </dd>
-            </dl>
-            <section id="formulieren">
-                <h2>Plane Your Visit</h2>
-                <p>Tickets are valid for single entry on the date of admission only.</p>
-                <form class="">
-                    <label for="start"><button>White</button>
-                        <button>White</button>
-                        <button>White</button>
-                    </label>
-                  <fieldset class="">
-
-          
-
-
-
-                    <label class="labelradio">
-                        <button>White</button>
-                        <button>White</button>
-                        <button>White</button><br>
-                        </label>
-
-                        <label>Toggle crest:</label>
-                        <select>
-                          <option disabled label="Please make a selection" selected value>Please make a selection</option>
-                          <option value="show">Show</option>
-                          <option value="hide">Hide</option>
-                        </select><br>
-                        <label>FIRST NAME:</label>
-                        <input type="text" class="">
-                   
-                    </label>
-                </form>
-              </section>
-
-
+        <section id="formulieren">
+            <ul>
                 <li>
-                    <a>Manipulate</a>
+                    <button>Configure</button>
                 </li>
                 <li>
-                    <a>Animate</a>
+                    <button>Animate</button>
+                </li>
+                <li>
+                    <button>Manipulate</button>
                 </li>
             </ul>
         </section>
-     
+        <section>
+            <label>Background:
+                <button>White</button>
+                <button>Blue</button>
+                <button>Red</button>
+                <button>Green</button>
+                <button>Pink</button>
+                </label>
+                <br>
+                <label>Zoom:
+                    <select>
+                        <option disabled label="Please make a selection" selected value>Please make a selection</option>
+                        <option value="normal">Normal</option>
+                        <option value="close">Close</option>
+                        <option value="far">Far</option>
+                    </select>
+                </label><br>
+                <label>Camera:
+                    <select>
+                        <option disabled label="Please make a selection" selected value>Please make a selection</option>
+                        <option value="hero">Hero</option>
+                        <option value="top">Top</option>
+                        <option value="right">Right</option>
+                        <option value="bottom">Bottom</option>
+                        <option value="left">Left</option>
+                    </select>
+                </label><br>
+                <label>Auto rotate:
+                    <select>
+                        <option disabled label="Please make a selection" selected value>Please make a selection</option>
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select>
+                </label><br>
+                <label>
+                    <button>Advanced...</button>
+                </label>
+                <br>
+                <label>
+                <a href="https://api.270degrees.nl/docs/index.html#/">Full documentation</a>
+                </label>
+                <br>
+                <label>
+                    <button>Get code!</button>
+                </label>
+        </section>
+        <section class="hide-section">
+            <label>
+                Background:
+                <input type="color" class="" placeholder="Select color">
+            </label>
+            <br>
+            <label>
+                Zoom:
+                <input type="range" min="0" max="1" step="0.01" class="" >
+            </label><br>
+            <label>Auto rotate:
+                <select>
+                    <option disabled label="Please make a selection" selected value>Please make a selection</option>
+                    <option value="off">Off</option>
+                    <option value="on">On</option>
+                </select>
+            </label><br>
+            <label>
+                Camera horizontal:
+                <input type="range" min="0" max="360"  class="" >
+            </label><br>
+            <label>
+                Camera vertical:
+                <input type="range" min="0.001" max="179.999" step="0.01" class="" >
+            </label><br>
+            <label>Lighting:
+                <select>
+                    <option disabled label="Please make a selection" selected value>Please make a selection</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="overcast">Overcast</option>
+                    <option value="indoor">Indoor</option>
+                    <option value="indoor alt">Indoor Alt</option>
+                    <option value="exterior">Exterior</option>
+                    <option value="exterior alt">Exterior Alt</option>
+                </select>
+            </label><br>
+            <label>
+                Rotation:
+                <input type="range" min="0" max="360"  class="" >
+            </label><br>
+            <label>
+                Exposure:
+                <input type="range" min="0" max="3" step="0.1" class="" >
+            </label><br>
+        </section>
+
+        <section>
+            <label>Main Color:
+                <button>White</button>
+                <button>Grey</button>
+                <button>Blue</button>
+                <button>Red</button>
+                </label>
+                <br>
+                <label>Toggle crest:
+                    <select>
+                        <option disabled label="Please make a selection" selected value>Please make a selection</option>
+                        <option value="show">Show</option>
+                        <option value="hide">Hide</option>
+                    </select></label><br>
+                
+                <label>Add image:
+                <input type="file" class="">
+                </label>
+                <br>
+                    <label>Add text:
+                <input type="text" class="" placeholder="Your text...">
+                </label>
+                <br>
+                <a href="https://api.270degrees.nl/docs/index.html#/">Full documentation</a>
+             
+        </section>
+        <canvas></canvas>
+        <section>
+            <h2>API driven, therefore platform agnostic</h2>
+            <p>
+                “But does it work on my platform?” is the most common question asked. 
+                The answer is a resounding Yes, thanks to our API driven technology.
+                <br>
+                Whether it's Shopify, BigCommerce, Wordpress, Umbraco, or any custom environment.
+                <br>
+                Plug it into your frontend and watch the magic happen.
+            </p>
+            <ul>
+                <li>
+                    <img src="https://270degrees.io/media/j3hpweav/bigcommerce.png">                    
+                </li>
+                <li>
+                    <img src="https://270degrees.io/media/l4mhgpfw/wordpress.png">                    
+                </li>
+                <li>
+                    <img src="https://270degrees.io/media/1m1l4byd/shopify.png">                    
+                </li>
+                <li>
+                    <img src="https://270degrees.io/media/kh3dryir/umbraco.png">                    
+                </li>
+                <li>
+                    <img src="https://270degrees.io/media/avgpgzut/lightspeed.svg">                    
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Compatible with any 3D file</h2>
+            <p>
+                270 Degrees can work with any 3D compatible file including CAD, CLO, GLB, and STL.
+				Assets are hosted on the API to ensure optimal file size and computational load so great
+				performance is guaranteed. What's more the API detects the end user's device's capabilities
+				and automatically delivers a suitable asset for the best experience.
+                <br><br>
+                If you do not have any 3D files available, we can create these for you as a service.
+                <a herf="">Get in touch</a>
+                for possibilities and pricing.											
+            </p>
+        </section>
+        <section>
+            <h2>
+                Brands that trust us
+            </h2>
+            <ul>
+                <li>
+                    <img src="https://270degrees.io/media/qb2k0wm4/fcutrecht.png">                    
+                </li>
+                <li>
+                    <img src="https://270degrees.io/media/dqenxcxk/makro.png">                    
+                </li>
+                <li>
+                    <img src="https://270degrees.io/media/bikoqbnj/puma.png">                    
+                </li>
+                <li>
+                    <img src="https://270degrees.io/media/n5ppoi2p/catuals.png">                    
+                </li>
+                <li>
+                    <img src="https://270degrees.io/media/anyfqv4z/pisco.png">                    
+                </li>
+                <li>
+                    <img src="https://270degrees.io/media/iamg2ycn/yoursurprise.svg">                    
+                </li>
+                <li>
+                    <img src="https://270degrees.io/media/vgra1uon/fokker.png">                    
+                </li>
+                <li>
+                    <img src="https://270degrees.io/media/izafcewk/11teamsports.png">                    
+                </li>
+                <li>
+                    <img src="https://270degrees.io/media/zone5jtj/liposoma.png">                    
+                </li>
+                <li>
+                    <img src="https://270degrees.io/media/jjyd0aw1/janfrantzen.svg">                    
+                </li>
+                <li>
+                    <img src="https://270degrees.io/media/hupdqoqo/niketeamfootball.png">                    
+                </li>
+                <li>
+                    <img src="https://270degrees.io/media/ywrep1y3/dela.png">                    
+                </li>
+                <li>
+                    <img src="https://270degrees.io/media/clqmtswo/hema.png">                    
+                </li>
+                <li>
+                    <img src="https://270degrees.io/media/yo0klv5y/louwman.svg">                    
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>
+                Get started today
+            </h2>
+            <p>Transform how your audience engages with your brand</p>
+        </section>
+        <section>
+            <ul>
+                <h3>Basic</h3>
+                <li>
+                    Unlimited assets
+                </li>
+                <li>
+                    Unlimited views
+                </li>
+                <li>
+                    Viewer configuration
+                </li>
+                <li>
+                    Single domain
+                </li>
+            </ul>
+            <button>€ 500/month</button>
+        </section>
+        <section>
+            <ul>
+                <h3>Premium</h3>
+                <li>
+                    Unlimited assets
+                </li>
+                <li>
+                    Unlimited views
+                </li>
+                <li>
+                    Viewer configuration
+                </li>
+                <li>
+                    Single domain
+                </li>
+                <li>
+                    Realtime customisation
+                </li>
+                <li>
+                    Priority support
+                </li>
+            </ul>
+            <button>€ 1000/month</button>
+        </section>
+        <section>
+            <ul>
+                <h3>Basic</h3>
+                <li>
+                    Unlimited assets
+                </li>
+                <li>
+                    Unlimited views
+                </li>
+                <li>
+                    Viewer configuration
+                </li>
+                <li>
+                    Single domain
+                </li>
+                <li>
+                    Realtime customisation
+                </li>
+                <li>
+                    Dedicated support
+                </li>
+                <li>
+                    Multiple domains
+                </li>
+                <li>
+                    Custom feature development
+                </li>
+            </ul>
+            <button>Talk to us</button>
+        </section>
     </main>
     <footer class="footer">
+        <section>
+            <ul>
+                <li>
+                    Docs
+                </li>
+                <li>
+                    Pricing
+                </li>
+                <li>
+                    Changelog
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    Privacy statement
+                </li>
+                <li>
+                    Cookie statement
+                </li>
+                <li>
+                    Disclaimer
+                </li>
+            </ul>
+        </section>
+        <hr>
+        <section>
+            <ul>
+                <li>
+                    Isaac Asscherpad 11<br>1096 BJ Amsterdam
+                </li>
+                <li>
+                    info@270degrees.nl
+                </li>
+                <br>
+                <li>
+                    info@270degrees.nl
+                </li>
+                <br>
+                <li>
+                    +31 20 3122015
+                </li>
+                <li>
+                    Join us:<br>
+                    jobs@270degrees.nl
+                </li>
+            </ul>
+        </section>
+        <section>
+            <ul>
+                <li>
+                    Partners:
+                </li>
+                <li>
+                    Holoconnects
+                </li>
+                <li>
+                    ProudNerds
+                </li>
+                <li>
+                    The Valley
+                </li>
+                <li>
+                    BrightRiver
+                </li>
+                <li>
+                    Ymage
+                </li>
+            </ul>
+        </section>
+        <section>
+            <p>
+               © 270 Degrees 2024
+               <img src="https://270degrees.io/media/wkkcsz2x/270logo.svg">
+            </p>
+        </section>
     
     </footer>
   </body>
