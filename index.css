@@ -1,0 +1,19 @@
+body {
+    line-height: 1.5;
+    @media (min-width: 30em) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+nav {
+    display: flex;
+    @media (min-width: 26em) {
+        justify-content: space-between;
+    }
+}
+footer {
+    text-align: right;
+    @media (min-width: 32em) {
+        text-align: center;
+    }
+}
