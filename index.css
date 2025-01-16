@@ -9,6 +9,8 @@ nav {
     display: flex;
     @media (min-width: 26em) {
         justify-content: space-between;
+        
+
     }
 }
 footer {
