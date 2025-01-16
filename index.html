@@ -122,124 +122,146 @@
                 </li>
             </ul>
         </section>
-        <section>
-            <label>Background:
-                <button>White</button>
-                <button>Blue</button>
-                <button>Red</button>
-                <button>Green</button>
-                <button>Pink</button>
-                </label>
-                <br>
-                <label>Zoom:
-                    <select>
-                        <option disabled label="Please make a selection" selected value>Please make a selection</option>
-                        <option value="normal">Normal</option>
-                        <option value="close">Close</option>
-                        <option value="far">Far</option>
-                    </select>
-                </label><br>
-                <label>Camera:
-                    <select>
-                        <option disabled label="Please make a selection" selected value>Please make a selection</option>
-                        <option value="hero">Hero</option>
-                        <option value="top">Top</option>
-                        <option value="right">Right</option>
-                        <option value="bottom">Bottom</option>
-                        <option value="left">Left</option>
-                    </select>
-                </label><br>
-                <label>Auto rotate:
-                    <select>
-                        <option disabled label="Please make a selection" selected value>Please make a selection</option>
-                        <option value="off">Off</option>
-                        <option value="on">On</option>
-                    </select>
-                </label><br>
-                <label>
+        <form>
+            <section>
+                <fieldset>
+                <label>Background:</label>
+                    <button>White</button>
+                    <button>Blue</button>
+                    <button>Red</button>
+                    <button>Green</button>
+                    <button>Pink</button>
+                    <br>
+                    <label>Zoom:</label>
+                        <select>
+                            <option disabled label="Please make a selection" selected value>Please make a selection</option>
+                            <option value="normal">Normal</option>
+                            <option value="close">Close</option>
+                            <option value="far">Far</option>
+                        </select>
+                    <br>
+                    <label>Camera:</label>
+                        <select>
+                            <option disabled label="Please make a selection" selected value>Please make a selection</option>
+                            <option value="hero">Hero</option>
+                            <option value="top">Top</option>
+                            <option value="right">Right</option>
+                            <option value="bottom">Bottom</option>
+                            <option value="left">Left</option>
+                        </select>
+                    <br>
+                    <label>Auto rotate:</label>
+                        <select>
+                            <option disabled label="Please make a selection" selected value>Please make a selection</option>
+                            <option value="off">Off</option>
+                            <option value="on">On</option>
+                        </select>
+                    <br>
                     <button>Advanced...</button>
-                </label>
-                <br>
-                <label>
-                <a href="https://api.270degrees.nl/docs/index.html#/">Full documentation</a>
-                </label>
-                <br>
-                <label>
+                    <br>
+                    <a href="https://api.270degrees.nl/docs/index.html#/">Full documentation</a>
+                    <br>
                     <button>Get code!</button>
-                </label>
-        </section>
-        <section class="hide-section">
-            <label>
-                Background:
-                <input type="color" class="" placeholder="Select color">
-            </label>
-            <br>
-            <label>
-                Zoom:
-                <input type="range" min="0" max="1" step="0.01" class="" >
-            </label><br>
-            <label>Auto rotate:
-                <select>
-                    <option disabled label="Please make a selection" selected value>Please make a selection</option>
-                    <option value="off">Off</option>
-                    <option value="on">On</option>
-                </select>
-            </label><br>
-            <label>
-                Camera horizontal:
-                <input type="range" min="0" max="360"  class="" >
-            </label><br>
-            <label>
-                Camera vertical:
-                <input type="range" min="0.001" max="179.999" step="0.01" class="" >
-            </label><br>
-            <label>Lighting:
-                <select>
-                    <option disabled label="Please make a selection" selected value>Please make a selection</option>
-                    <option value="neutral">Neutral</option>
-                    <option value="overcast">Overcast</option>
-                    <option value="indoor">Indoor</option>
-                    <option value="indoor alt">Indoor Alt</option>
-                    <option value="exterior">Exterior</option>
-                    <option value="exterior alt">Exterior Alt</option>
-                </select>
-            </label><br>
-            <label>
-                Rotation:
-                <input type="range" min="0" max="360"  class="" >
-            </label><br>
-            <label>
-                Exposure:
-                <input type="range" min="0" max="3" step="0.1" class="" >
-            </label><br>
-        </section>
+                </fieldset>
+            </section>
+            <section class="hide-section">
+                <fieldset>
+                    <label>Background:</label>
+                        <input type="color" class="">
+                    <br>
+                    <label>Zoom:</label>
+                        <input type="range" min="0" max="1" step="0.01" class="" >
+                    <br>
+                    <label>Auto rotate:</label>
+                        <select>
+                            <option disabled label="Please make a selection" selected value>Please make a selection</option>
+                            <option value="off">Off</option>
+                            <option value="on">On</option>
+                        </select>
+                    <br>
+                    <label>Camera horizontal:</label>
+                        <input type="range" min="0" max="360"  class="" >
+                    <br>
+                    <label>Camera vertical:</label>
+                        <input type="range" min="0.001" max="179.999" step="0.01" class="" >
+                    <br>
+                    <label>Lighting:</label>
+                        <select>
+                            <option disabled label="Please make a selection" selected value>Please make a selection</option>
+                            <option value="neutral">Neutral</option>
+                            <option value="overcast">Overcast</option>
+                            <option value="indoor">Indoor</option>
+                            <option value="indoor alt">Indoor Alt</option>
+                            <option value="exterior">Exterior</option>
+                            <option value="exterior alt">Exterior Alt</option>
+                        </select>
+                    <br>
+                    <label>Rotation:</label>
+                        <input type="range" min="0" max="360"  class="" >
+                    <br>
+                    <label>Exposure:</label>
+                        <input type="range" min="0" max="3" step="0.1" class="" >
+                    <br>
+                    <a href="https://api.270degrees.nl/docs/index.html#/">Full documentation</a>
 
-        <section>
-            <label>Main Color:
-                <button>White</button>
-                <button>Grey</button>
-                <button>Blue</button>
-                <button>Red</button>
-                </label>
-                <br>
-                <label>Toggle crest:
-                    <select>
-                        <option disabled label="Please make a selection" selected value>Please make a selection</option>
-                        <option value="show">Show</option>
-                        <option value="hide">Hide</option>
-                    </select></label><br>
-                
-                <label>Add image:
-                <input type="file" class="">
-                </label>
-                <br>
-                    <label>Add text:
-                <input type="text" class="" placeholder="Your text...">
-                </label>
-                <br>
-                <a href="https://api.270degrees.nl/docs/index.html#/">Full documentation</a>
-             
-        </section>
+                </fieldset>
+            </section>
+            <section>
+                <fieldset>
+                <label>Main Color:</label>
+                    <button>White</button>
+                    <button>Grey</button>
+                    <button>Blue</button>
+                    <button>Red</button>
+                    <br>
+                    <label>Toggle crest:</label>
+                        <select>
+                            <option disabled label="Please make a selection" selected value>Please make a selection</option>
+                            <option value="show">Show</option>
+                            <option value="hide">Hide</option>
+                        </select><br>
+                    <label>Add image:</label>
+                    <input type="file" class="">
+                    <br>
+                    <label>Add text:</label>
+                    <input type="text" class="" placeholder="Your text...">
+                    <br>
+                    <a href="https://api.270degrees.nl/docs/index.html#/">Full documentation</a>
+                </fieldset>
+            </section>
+            <section>
+                <fieldset>
+                    <label>Move cam to:</label>
+                        <select>
+                            <option value="hero">Hero</option>
+                            <option value="top">Top</option>
+                            <option value="right">Right</option>
+                            <option value="bottom">Bottom</option>
+                            <option value="left">Left</option>
+                        </select>
+                        <br>
+                    <label>Zoom to:</label>
+                        <select>
+                            <option value="normal">Normal</option>
+                            <option value="close">Close</option>
+                            <option value="far">Far</option>
+                        </select>
+                        <br>
+                    <label>Lighting Exposure:</label>
+                        <input type="range" min="0.2" max="2" step="0.1" class="" >
+                    <br>
+                    <label>Lighting Rotation:</label>
+                        <input type="range" min="0" max="360" class="" >
+                    <br>
+                    <label>Speed:</label>
+                    <input type="range" min="250" max="2000" step="250" class="" >
+                    <br>
+                    <button>Start!</button>
+                    <br>
+                    <a href="https://api.270degrees.nl/docs/index.html#/">Full documentation</a>
+                </fieldset>
+            </section>
+        </form>
         <canvas></canvas>
         <section>
             <h2>API driven, therefore platform agnostic</h2>
@@ -278,7 +300,7 @@
 				and automatically delivers a suitable asset for the best experience.
                 <br><br>
                 If you do not have any 3D files available, we can create these for you as a service.
-                <a herf="">Get in touch</a>
+                <a>Get in touch</a>
                 for possibilities and pricing.											
             </p>
         </section>
@@ -338,8 +360,8 @@
             <p>Transform how your audience engages with your brand</p>
         </section>
         <section>
+            <h3>Basic</h3>
             <ul>
-                <h3>Basic</h3>
                 <li>
                     Unlimited assets
                 </li>
