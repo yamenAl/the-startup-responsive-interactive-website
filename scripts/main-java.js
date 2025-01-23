@@ -46,17 +46,17 @@ const customList = [
     
     { 
         name: 'body', 
-        colors: ['black', 'white','gray','rgb(139, 36, 36)','rgb(115, 31, 234)'],
+        colors: ['black', 'white','gray','rgb(139, 36, 36)','rgb(115, 31, 234)',yellow],
         cameraPosition: { phi: 30, theta: 0, zoom:0.6} 
     },
     { 
         name: 'sleeves', 
-        colors: ['black', 'white','gray','rgb(139, 36, 36)','rgb(115, 31, 234)'],
+        colors: ['black', 'white','gray','rgb(139, 36, 36)','rgb(115, 31, 234)',yellow],
         cameraPosition: { phi: 10, theta: 90, zoom:0.8 } 
     },
     { 
         name: 'collar',  
-        colors: ['black', 'white','gray','rgb(139, 36, 36)','rgb(115, 31, 234)'],
+        colors: ['black', 'white','gray','rgb(139, 36, 36)','rgb(115, 31, 234)',yellow],
         cameraPosition: { phi: 60, theta: 20, zoom:0.6} 
        
     }
