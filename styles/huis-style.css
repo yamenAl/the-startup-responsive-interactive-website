@@ -1,0 +1,216 @@
+
+/* Kleuren */
+:root {
+    --color-white: #FFFFFF;
+    --color-carolina-blue: #52A4D6;
+    --color-lapis-lazuli: #1D72A6;
+    --color-maastricht-blue: #082036;
+    --color-black: #0A0A0A;
+    --color-light-lapis-lazuli: #D2E3ED;
+    --color-maya-blue: #72C1F2;
+    --color-cyan-blue-azure: #3C8FC2;
+    --color-dark-cerulean: #1A4973;
+    --color-space-cadet: #12314D;
+}
+
+body {
+    --primary-font: "DIN 2014", sans-serif;
+    --details-font: "Andale Mono";
+
+    /*  Header--->Desktop    */
+    --h1-font-size-desktop: 96px;
+    --h2-font-size-desktop: 72px;
+    --h3-font-size-desktop: 64px;
+    --h4-font-size-desktop: 48px;
+
+   /* Tablet */
+   --h1-font-size-tablet: 72px;
+   --h2-font-size-tablet: 64px;
+   --h3-font-size-tablet: 48px;
+   --h4-font-size-tablet: 40px;
+
+
+    /* Mobile */
+    --h1-font-size-mobile: 64px;
+    --h2-font-size-mobile: 48px;
+    --h3-font-size-mobile: 32px;
+    --h4-font-size-mobile: 32px;
+
+    --h1-font-weight: bold;
+    --h2-font-weight: regular;
+    --p-font-weight: light;
+    --letter-spacing: 3%;
+
+
+      /*  Paragraphs--->Desktop */
+    --p-l-size-desktop: 32px;
+    --p-m-size-desktop: 28px;
+    --p-s-size-desktop: 24px; 
+
+    /* Tablet */
+    --p-l-size-tablet: 28px;
+    --p-m-size-tablet: 24px;
+    --p-s-size-tablet: 20px;   
+
+    /* Mobile */
+    --p-font-size-mobile: 24px;
+    --p-font-size-mobile: 20px;
+    --p-font-size-mobile: 16px;
+
+
+    /* Button text sizes */
+    --button-text-size: 1em;
+
+    /* Responsive breakpoints */
+    --breakpoint-desktop: 75em;
+    --breakpoint-tablet: 48em;
+    --breakpoint-mobile: 320px;
+    --letter-spacing: 3%;
+
+   font-family: var(--primary-font);
+   
+    
+}
+
+h1 {
+    font-size: var(--h1-font-size-desktop);
+    font-weight: var(--h1-font-weight);
+}
+
+h2 {
+    font-size: var(--h2-font-size-desktop);
+    font-weight: var(--h2-font-weight);
+}
+
+h3 {
+    font-size: var(--h3-font-size-desktop);
+    font-weight: var(--h2-font-weight);
+}
+
+h4 {
+    font-size: var(--h4-font-size-desktop);
+    font-weight: var(--h2-font-weight);
+}
+p{
+    font-size:  var(--p-l-size-desktop);
+    font-weight: var(--p-font-weigh);
+
+}
+
+
+/* Voor mobiel */
+@media (max-width:48em) {
+    h1 {
+        font-size: var(--h1-font-size-mobile);
+        font-weight: var(--h1-font-weight);
+
+    }
+
+    h2 {
+        font-size: var(--h2-font-size-mobile);
+        font-weight: var(--h2-font-weight);
+
+    }
+
+    h3 {
+        font-size: var(--h3-font-size-mobile);
+        font-weight: var(--h2-font-weight);
+
+    }
+
+    h4 {
+        font-size: var(--h4-font-size-mobilee);
+        font-weight: var(--h2-font-weight);
+
+    }
+    p{
+        font-size:  var(--p-s-size-desktop);
+        font-weight: var(--p-font-weigh);
+
+        
+        
+    }
+}
+/* Voor tablet */
+@media (max-width:75em) {
+    h1 {
+        font-size: var(--h1-font-size-tablet);
+        font-weight: var(--h1-font-weight);
+
+    }
+
+    h2 {
+        font-size: var(--h2-font-size-tablet);
+        font-weight: var(--h2-font-weight);
+
+    }
+
+    h3 {
+        font-size: var(--h3-font-size-tablet);
+        font-weight: var(--h2-font-weight);
+
+    }
+
+    h4 {
+        font-size: var(--h4-font-size-tablet);
+        font-weight: var(--h2-font-weight);
+
+    }
+    p{
+        font-size:  var(--p-l-size-tablet);
+        font-weight: var(--p-font-weigh);
+
+        
+        
+    }
+}
+/* Buttons */
+
+button {
+    background-color: var(--color-carolina-blue);
+    color: var(--main-black);
+    font-weight: var(--h2-font-weight);
+    cursor: pointer;
+    padding: var(--letter-spacing);
+    font-size: var(--button-text-size);
+    &:hover {
+        background-color: var(--color-white);
+        border: 2px solid var(--color-carolina-blue);
+        color: var(--color-black);
+        font-weight: var(--h1-font-weight);
+
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+
+
+
+
+/* Formulier elementen */
+input{
+    background-color: var(--color-white);
+    /* font-family:formlettertype ; */
+    margin: 0.5rem;
+}
+
+input:checked{
+   font-weight: bold; 
+}
+
+.labelradio:not(:has(input:checked)){
+    opacity: 25%;
+}
+
+body:has(.labelradio:has(input:checked)) {
+    opacity: 0.5;
+}
+
+
+
+
