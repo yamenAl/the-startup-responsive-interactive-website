@@ -107,12 +107,3 @@ TSDViewer.create($viewer, {
     },
 });
 let viewList = 1;
-function showList(listId) {
-    const lists = document.querySelectorAll('.custom-form > section');
-    lists.forEach(list => list.style.display = 'none'); // Hide all lists
-
-    const targetList = document.getElementById(listId);
-    if (targetList) {
-        targetList.style.display = 'block'; // Show the targeted list
-    }
-}

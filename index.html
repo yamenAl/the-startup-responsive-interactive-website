@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>270degrees</title>
+    <title>270 Degrees</title>
     <link rel="stylesheet" href="styles/main-style.css">
     <link rel="stylesheet" href="styles/huis-style.css">
     <script src="scripts/main-java.js" defer></script>
@@ -12,116 +12,138 @@
 
 <body>
     <!-- Header -->
-    <header aria-label="page header">            
-        <img class="logo" src="photos/270-degrees-logo-wit.png" alt="270 Degrees logo" >
-
+    <header aria-label="page header">
+        <img class="logo" src="photos/270-degrees-logo-wit.png" alt="270 Degrees logo">
         <nav class="navbar">
             <span class="hum-menu">&#9776;</span>
             <ul class="nav-list">
-                <li><a href="https://270degrees.io/about-us" aria-label="link to about us 270Degrees page">About us</a></li>
-                <li><a href="#custom" aria-label="link to custon area">Custom</a></li>
-                <li><a href="#info" aria-label="link to info 270Degrees info">Info</a></li>
+                <li><a href="https://270degrees.io/about-us" aria-label="link to About Us page">About us</a></li>
+                <li><a href="#custom" aria-label="link to custom section">Custom</a></li>
+                <li><a href="#info" aria-label="link to Info section">Info</a></li>
             </ul>
         </nav>
- 
     </header>
 
-    <!-- Main  -->
+    <!-- Main Content -->
     <main>
-        <div class="viewer viewer-cta">
-            <div class="js-270viewer" data-270-logo="true" data-270-zoom="false" data-270-camera-position="90" data-270-model="hva-polo" data-270-autorotate="true" data-270-background="#12314D" ></div>
-        </div>
-            <h1>The world's most flexible 3D solution</h1>
+        <!-- Intro Section -->
+        <section aria-label="Intro section">
+            <div class="viewer viewer-cta">
+                <div class="js-270viewer" 
+                    data-270-logo="true" 
+                    data-270-zoom="false" 
+                    data-270-camera-position="90" 
+                    data-270-model="hva-polo" 
+                    data-270-autorotate="true" 
+                    data-270-background="#12314D">
+                </div>
+            </div>
+            <h1>The World's Most Flexible 3D Solution</h1>
             <a href="https://api.270degrees.nl/docs/index.html">Read the docs</a>
         </section>
-            <h2>Try it yorself</h2>
-            <p>Discover the 270 Degrees Viewer and effortlessly bring your 3D vision to life with plug-and-play simplicity. 
-                Welcome to the future of interactive 3D, 
-                where our technology opens doors to endless possibilities
-            </p>
-            <section class="custom-view" aria-label="custom view">
 
-                <div class="model-view"> 
-                    <div class="model viewer2" data-270-plugins="customiser" data-270-logo="true" data-270-zoom="false" data-270-background="#ececec" ></div>
+        <!-- Description Section -->
+        <section aria-label="Description section">
+            <h2>Try It Yourself</h2>
+            <p>
+                Discover the 270 Degrees Viewer and effortlessly bring your 3D vision to life with plug-and-play simplicity. 
+                Welcome to the future of interactive 3D, where our technology opens doors to endless possibilities.
+            </p>
+        </section>          
+
+        <!-- Customization Section -->
+        <section id="custom" class="custom-view" aria-label="customization view">
+            <h2>Customize Your Model</h2>
+            <div class="model-view">
+                <div class="model viewer2" 
+                    data-270-plugins="customiser" 
+                    data-270-logo="true" 
+                    data-270-zoom="false" 
+                    data-270-background="#ececec">
                 </div>
-            </section>
-                <section >
-                    <ul class="formulieren">
-                        <li>
-                            <button  aria-label="Color section color button" onclick="showList('color-list')">Color</button>
-                        </li>
-                        <li>
-                            <button aria-label="Editor section editor button" onclick="showList('editor-list')">Editor</button>
-                        </li>
-                        <li>
-                            <button aria-label="Enimate section button"  onclick="showList('enimate-list')">Enimate</button>
-                        </li>
-                    </ul>
-                </section>
-            <fieldset id="#custom">
-                    <section>
-                        <div class="custom-form" id="color-list">
-                            <section  class="color-pick" aria-label="Color picker body">
-                                <h2 aria-label="Polo body section">Body</h2>
-                                <div class="color-buttons body">
-                                    <button aria-label="Black color Polo body button"></button>
-                                    <button aria-label="white color Polo body  button"></button>
-                                    <button aria-label="grey color Polo body  button"></button>
-                                    <button aria-label="red color Polo body button"></button>
-                                    <button aria-label="blue color Polo body button"></button>
-                                    <button aria-label="yellow color Polo body  button"></button>
-                                </div>
-                            </section>
-                            <section  class="color-pick" aria-label="Color picker sleeve">
-                                <h2 aria-label="Polo sleeve section">Sleeve</h2>
-                                <div class="color-buttons sleeve">
-                                    <button aria-label="Black color Polo sleeve button"></button>
-                                    <button aria-label="white color Polo sleeve  button"></button>
-                                    <button aria-label="grey color Polo sleeve  button"></button>
-                                    <button aria-label="red color Polo sleeve button"></button>
-                                    <button aria-label="blue color Polo sleeve button"></button>
-                                    <button aria-label="yellow color Polo sleeve  button"></button>
-                                </div>
-                            </section>
-                            <section class="color-pick" aria-label="Color picker collar">
-                                <h2 aria-label="Polo collar section">Collar</h2>
-                                <div class="color-buttons collar">
-                                    <button aria-label="Black color Polo collar button"></button>
-                                    <button aria-label="white color Polo collar  button"></button>
-                                    <button aria-label="grey color Polo collar  button"></button>
-                                    <button aria-label="red color Polo collar button"></button>
-                                    <button aria-label="blue color Polo collar button"></button>
-                                    <button aria-label="yellow color Polo collar  button"></button>
-                                </div>
-                            </dev>
-                    </section>
-            </fieldset>
-                    <div class="controls">
-                        <button id="prev">Previous</button>
-                        <button id="next">Next</button>
+            </div>
+        </section>
+
+        <!-- Customization Options -->
+        <section aria-label="Customization options">
+            <h3>Customization Options</h3>
+            <ul class="formulieren">
+                <li>
+                    <button onclick="showList('color-list')">Color</button>
+                </li>
+                <li>
+                    <button onclick="showList('editor-list')">Editor</button>
+                </li>
+                <li>
+                    <button onclick="showList('animate-list')">Animate</button>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Color Picker Section -->
+        <fieldset>
+            <section id="color-list" class="custom-form">
+                <div class="color-pick" aria-labelledby="body-heading">
+                    <h3 id="body-heading">Polo Body</h3>
+                    <div class="color-buttons body">
+                        <button aria-label="Black"></button>
+                        <button aria-label="White"></button>
+                        <button aria-label="Grey"></button>
+                        <button aria-label="Red"></button>
+                        <button aria-label="Blue"></button>
+                        <button aria-label="Yellow"></button>
+                    </div>
+                </div>
+                <div class="color-pick" aria-labelledby="sleeve-heading">
+                    <h3 id="sleeve-heading">Polo Sleeve</h3>
+                    <div class="color-buttons sleeve">
+                        <button aria-label="Black"></button>
+                        <button aria-label="White"></button>
+                        <button aria-label="Grey"></button>
+                        <button aria-label="Red"></button>
+                        <button aria-label="Blue"></button>
+                        <button aria-label="Yellow"></button>
+                    </div>
+                </div>
+                <div class="color-pick" aria-labelledby="collar-heading">
+                    <h3 id="collar-heading">Polo Collar</h3>
+                    <div class="color-buttons collar">
+                        <button aria-label="Black"></button>
+                        <button aria-label="White"></button>
+                        <button aria-label="Grey"></button>
+                        <button aria-label="Red"></button>
+                        <button aria-label="Blue"></button>
+                        <button aria-label="Yellow"></button>
                     </div>
                 </div>
             </section>
-            <br><br>
-        <!--  <fieldset><div class="control logo"><span class="label">Crest:</span><button class="upload-btn" data-target="crest">Upload</button></div>
-                </fieldset>
-         --
+        </fieldset>
+
+        <!-- Navigation Controls -->
+        <div class="controls">
+            <button id="prev">Previous</button>
+            <button id="next">Next</button>
+        </div>
     </main>
-    <!--  Footer -->
-    <footer class="footer" aria-label="bage footer">
-        <section >
+
+    <!-- Footer -->
+    <footer class="footer" aria-label="page footer">
+            <p>Yamen Alsharabi<p>
             <ul>
-                <li>Yamen Al Sharabi</li>
                 <li>Partners:</li>
                 <li>Hva</li>
                 <li>FDND</li>
             </ul>
             <p>© 270 Degrees 2025</p>
-            <img src="photos/270-degrees-logo-icon.png" alt="270 " alt="270 Degrees logo">
-        </section>
+            <img src="photos/270-degrees-logo-icon.png" alt="270 Degrees logo icon">
     </footer>
-    <script>window.TSDAPIKEY = '645c0808-b5fb-4d15-8986-ffb6a267af2d';</script>
+
+    <!-- Scripts -->
+    <script>
+        window.TSDAPIKEY = '645c0808-b5fb-4d15-8986-ffb6a267af2d';
+    </script>
     <script src="https://api.270degrees.nl/api/script/latest/viewer.js"></script>
     <script src="https://api.270degrees.nl/api/script/latest/customiser.js"></script>
 </body>
+
 </html>

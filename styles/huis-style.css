@@ -12,6 +12,12 @@
     --color-dark-cerulean: #1A4973;
     --color-space-cadet: #12314D;
 }
+@font-face {
+    font-family: DIN 2014;
+    src:url(/din-2014-font/DIN2014-Regular.woff);
+}
+
+
 
 body {
     --primary-font: "DIN 2014", sans-serif;
