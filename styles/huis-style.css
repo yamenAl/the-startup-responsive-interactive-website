@@ -96,6 +96,9 @@ p{
     font-weight: var(--p-font-weigh);
 
 }
+.space{
+    margin-bottom: 2em;
+}
 
 
 /* Voor mobiel */
