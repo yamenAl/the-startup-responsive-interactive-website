@@ -15,11 +15,11 @@
     <header aria-label="page header">
         <img class="logo" src="photos/270-degrees-logo-wit.png" alt="270 Degrees logo">
         <nav class="navbar">
-            <span class="hum-menu">&#9776;</span>
+            <span class="hum-menu" aria-hidden="true">&#9776;</span>
             <ul class="nav-list">
-                <li><a href="https://270degrees.io/about-us" aria-label="link to About Us page">About us</a></li>
-                <li><a href="#custom" aria-label="link to custom section">Custom</a></li>
-                <li><a href="#info" aria-label="link to Info section">Info</a></li>
+                <li><a href="https://270degrees.io/about-us" alt="link to About Us page">About us</a></li>
+                <li><a href="#custom" alt="link to custom section">Custom</a></li>
+                <li><a href="#info" alt="link to Info section">Info</a></li>
             </ul>
         </nav>
     </header>
@@ -52,7 +52,7 @@
         </section>          
 
         <!-- Customization Section -->
-        <section id="custom" class="custom-view" aria-label="customization view">
+        <section id="custom" class="custom-view" alt="customization view">
             <h2>Customize Your Model</h2>
             <div class="model-view">
                 <div class="model viewer2" 
@@ -69,13 +69,13 @@
             <h3>Customization Options</h3>
             <ul class="formulieren">
                 <li>
-                    <button onclick="showList('color-list')">Color</button>
+                    <button onclick="showList('color-list')" aria-label="Button color">Color</button>
                 </li>
                 <li>
-                    <button onclick="showList('editor-list')">Editor</button>
+                    <button onclick="showList('editor-list')" aria-label="Button editor">Editor</button>
                 </li>
                 <li>
-                    <button onclick="showList('animate-list')">Animate</button>
+                    <button onclick="showList('animate-list')" aria-label="Button animate">Animate</button>
                 </li>
             </ul>
         </section>
@@ -86,34 +86,34 @@
                 <div class="color-pick" aria-labelledby="body-heading">
                     <h3 id="body-heading">Polo Body</h3>
                     <div class="color-buttons body">
-                        <button aria-label="Black"></button>
-                        <button aria-label="White"></button>
-                        <button aria-label="Grey"></button>
-                        <button aria-label="Red"></button>
-                        <button aria-label="Blue"></button>
-                        <button aria-label="Yellow"></button>
+                        <button aria-label="Black body color button" style="background-color: black;" ></button>
+                        <button aria-label="White body color button" style="background-color: white;" ></button>
+                        <button aria-label="Grey body color button" style="background-color: grey;" ></button>
+                        <button aria-label="Red body color button" style="background-color: red;" ></button>
+                        <button aria-label="Blue body color button" style="background-color: blue;" ></button>
+                        <button aria-label="Yellow body color button" style="background-color: yellow;" ></button>
                     </div>
                 </div>
                 <div class="color-pick" aria-labelledby="sleeve-heading">
                     <h3 id="sleeve-heading">Polo Sleeve</h3>
                     <div class="color-buttons sleeve">
-                        <button aria-label="Black"></button>
-                        <button aria-label="White"></button>
-                        <button aria-label="Grey"></button>
-                        <button aria-label="Red"></button>
-                        <button aria-label="Blue"></button>
-                        <button aria-label="Yellow"></button>
+                        <button aria-label="Black sleeve color button" style="background-color: black;" aria-label="Button"></button>
+                        <button aria-label="White sleeve color button" style="background-color: white;" aria-label="Button"></button>
+                        <button aria-label="Grey sleeve color button" style="background-color: grey;" aria-label="Button"></button>
+                        <button aria-label="Red sleeve color button" style="background-color: red;" aria-label="Button"></button>
+                        <button aria-label="Blue sleeve color button" style="background-color: blue;" aria-label="Button"></button>
+                        <button aria-label="Yellow sleeve color button" style="background-color: yellow;" aria-label="Button"></button>
                     </div>
                 </div>
                 <div class="color-pick" aria-labelledby="collar-heading">
                     <h3 id="collar-heading">Polo Collar</h3>
                     <div class="color-buttons collar">
-                        <button aria-label="Black"></button>
-                        <button aria-label="White"></button>
-                        <button aria-label="Grey"></button>
-                        <button aria-label="Red"></button>
-                        <button aria-label="Blue"></button>
-                        <button aria-label="Yellow"></button>
+                        <button aria-label="Black collar color button" style="background-color: black;" aria-label="Button"></button>
+                        <button aria-label="White collar color button" style="background-color: white;" aria-label="Button"></button>
+                        <button aria-label="Grey collar color button" style="background-color: grey;" aria-label="Button"></button>
+                        <button aria-label="Red collar color button" style="background-color: red;" aria-label="Button"></button>
+                        <button aria-label="Blue collar color button" style="background-color: blue;" aria-label="Button"></button>
+                        <button aria-label="Yellow collar color button" style="background-color: yellow;" aria-label="Button"></button>
                     </div>
                 </div>
             </section>
@@ -121,21 +121,21 @@
 
         <!-- Navigation Controls -->
         <div class="controls">
-            <button id="prev">Previous</button>
-            <button id="next">Next</button>
+            <button id="prev" aria-label="Button">Previous</button>
+            <button id="next" aria-label="Button">Next</button>
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="footer" aria-label="page footer">
-            <p>Yamen Alsharabi<p>
-            <ul>
-                <li>Partners:</li>
-                <li>Hva</li>
-                <li>FDND</li>
-            </ul>
-            <p>© 270 Degrees 2025</p>
-            <img src="photos/270-degrees-logo-icon.png" alt="270 Degrees logo icon">
+    <footer class="footer" alt="page footer">
+        <p>Yamen Alsharabi</p>
+        <ul>
+            <li>Partners:</li>
+            <li>Hva</li>
+            <li>FDND</li>
+        </ul>
+        <p>© 270 Degrees 2025</p>
+        <img class="logo" src="photos/270-degrees-logo-wit.png" alt="270 Degrees logo">
     </footer>
 
     <!-- Scripts -->
