@@ -199,8 +199,8 @@ ul {
 
 
 button:focus {
-    outline: 2px solid var(--color-white) !important;
-    border-radius: 5px;
+    outline: 2px solid var(--color-space-cadet) !important;
+    border-radius: 4px;
 }
 
 
