@@ -107,6 +107,8 @@ p{
 }
 
 
+
+
 /* Voor mobiel */
 @media (max-width:48em) {
     h1 {
@@ -196,6 +198,10 @@ ul {
 }
 
 
+button:focus {
+    outline: 2px solid var(--color-white) !important;
+    border-radius: 5px;
+}
 
 
 
